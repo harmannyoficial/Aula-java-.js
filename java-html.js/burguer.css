@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  background: black;
+}
+.container-button {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #2bd922;
+  color: #121010;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+
+}
+button:hover {
+  background-color: rgb(24, 174, 16, 0.8);
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;   
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+li{
+   
+    border: 1px solid rgb(105, 11, 149);
+    border-radius: 5px;
+    padding: 5px; 
+  
+}
+
+img{
+    width: 100%;  
+}
+p{
+    text-align: center;
+    color: white;
+}
+.item-price /* p */{
+  
+    text-align: center;
+    color: rgb(24, 174, 16, 0.8);
+}

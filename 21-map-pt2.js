@@ -58,10 +58,20 @@ const studant = [
     { nome: 'ana', nota: 6 },
     { nome: 'lucas', nota: 4 }
 ]
-const newstudant =studant.map(alunos=>{
-    return{
+/* se depois de => adicionar o ( antes de {  , faz com que nao precise usar o return escrito .
+ */const newstudant = studant.map((alunos ) => {
+        return {
         nome: alunos.nome,
-        status:alunos.nota  >5 ? 'aprovado' : 'reprovado'
-    }
-})  
+        status:alunos.nota  >5 ? 'aprovado' : 'reprovado'}
+    })
+
 console.log(newstudant)
+/* se depois de => adicionar o ( antes de {  , faz com que nao precise usar o return escrito .*/
+const newstudante = studant.map((alunos ) => ({
+        ...alunos,
+        nome:alunos.nome,
+        nota: alunos.nota*5
+    }))
+
+
+console.log(newstudante)
